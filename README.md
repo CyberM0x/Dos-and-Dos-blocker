@@ -44,5 +44,30 @@ Install dependency:
 ```sudo python3 DOS.py```
 
 
+## Notes
+
+- Scripts must be executed in a controlled environment
+- Blocked IPs are added using:
+
+```iptables -A INPUT -s <ip> -j DROP```
+
+View rules:
+
+```iptables -L -n```
+
+Flush rules (use with caution):
+
+```iptables -F```
+
+
+## Disclaimer
+
+For educational and defensive security research only.
+Do not use on production or unauthorized networks.
+
+## Author
+
+CyberM0x
+
 
 
